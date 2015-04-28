@@ -1,0 +1,20 @@
+<transaccion>
+    <idTransmision>123</idTransmision>
+	<formatos>
+		<formato>
+			<tipo>1</tipo>
+			<numero>0000000397</numero>
+			<fecha>23/03/2015</fecha>
+		</formato>
+		<formato>
+			<tipo>2</tipo>
+			<numero>0000000398</numero>
+			<fecha>15/04/2015</fecha>
+		</formato>
+		<formato>
+			<tipo>3</tipo>
+			<numero>0000000399</numero>
+			<fecha>15/04/2015</fecha>
+		</formato>
+	</formatos>
+</transaccion>

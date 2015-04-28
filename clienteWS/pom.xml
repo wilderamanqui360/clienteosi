@@ -1,0 +1,140 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>pe.gob.onp.reapro.mt.ws</groupId>
+	<artifactId>clienteWS</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>clienteWS</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<jdk.version>1.6</jdk.version>
+		<junit.version>4.10</junit.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+	
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>${jdk.version}</source>
+						<target>${jdk.version}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<!-- <groupId>org.jvnet.jax-ws-commons</groupId> -->
+					<artifactId>jaxws-maven-plugin</artifactId>
+					<!-- <version>2.2</version> -->
+					<executions>
+						<execution>
+							<goals>
+								<goal>wsimport</goal>
+							</goals>
+							<configuration>
+								<xjcArgs>
+									<xjcArg> -npa</xjcArg>
+								</xjcArgs>
+								
+							</configuration>
+						</execution>
+					</executions>
+					<!-- <configuration> -->
+					<!-- <wsdlDirectory>${basedir}/src/main/resources/wsdl</wsdlDirectory> -->
+					<!-- <sourceDestDir>${basedir}/src/main/java</sourceDestDir> -->
+					<!-- <staleFile>${basedir}/src/main/resources/wsdl/stale</staleFile> -->
+					<!-- <keep>true</keep> -->
+					<!-- <verbose>true</verbose> -->
+					<!-- </configuration> -->
+					<configuration>
+						<xjcArgs>
+							<xjcArg> -npa</xjcArg>
+						</xjcArgs>
+						<wsdlUrls>
+
+							<!-- no comentar wsdls -->
+							<!-- <wsdlFile>http://msgbrk1:7811/ESB/WSBusquedaProceso?wsdl</wsdlFile> 
+								<wsdlFile>http://msgbrk1:7811/ESB/WSPersona?WSDL</wsdlFile> <wsdlFile>http://msgbrk1:7811/ESB/WSBusquedaAporte?wsdl</wsdlFile> 
+								<wsdlFile>http://msgbrk1:7800/ESB/WSDocumento?wsdl</wsdlFile> <wsdlFile>http://msgbrk1:7800/ESB/WSBusquedaPersona?wsdl</wsdlFile> -->
+							<!-- <wsdlFile>http://msgbrk1:7811/ESB/WSBusquedaDocumentos?wsdl</wsdlFile> 
+								<wsdlFile>http://msgbrk1:7811/ESB/WSReglaNegocio?wsdl</wsdlFile> <wsdlFile>http://192.168.55.19:8088/mockWSReporteAportesSOAP?wsdl</wsdlFile> 
+								<wsdlFile>http://msgbrk1:7811/ESB/WSReporteAportes?wsdl</wsdlFile> <wsdlFile>http://msgbrk1:7811/ESB/WSBusquedaNotificaciones?wsdl</wsdlFile> 
+								<wsdlFile>http://msgbrk1:7811/ESB/WSSubsanacion?wsdl</wsdlFile> <wsdlFile>http://msgbrk1:7811/ESB/WSBusquedaDocumentos?wsdl</wsdlFile> -->
+							<wsdlFile>http://localhost:8080/sunateo_ws/services/WsNotificaciones?wsdl</wsdlFile>
+
+
+
+
+
+
+
+
+
+
+						</wsdlUrls>
+
+						<sourceDestDir>${basedir}/src/main/java</sourceDestDir>
+						<staleFile>${basedir}/src/main/resources/wsdl/stale.stale</staleFile>
+						<keep>true</keep>
+						<verbose>true</verbose>
+						<extension>true</extension>
+						<protocol>Xsoap1.2</protocol>
+						<!--<bindingFiles> <bindingFile>${basedir}/src/main/resources/wsdl/binding1.txt</bindingFile> 
+							</bindingFiles> -->
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+	</build>
+</project>

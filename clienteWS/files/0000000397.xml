@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<notificacion xmlns="urn:peru:mtpe:data:standard:FNATEO1:1" xmlns:vram="MTPEReusableAggregateBusinessInformationEntity" xmlns:vct="mtpe_CommonTypes_D08B" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:6" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:peru:mtpe:data:standard:FNATEO1:1 ../uncefact/data/standard/notificaciones/FNATEO1.xsd&quot;">
+	<vram:DocumentHeader>
+		<vram:NotificationData>
+			<vct:NotificationNumber>00000000000000000397</vct:NotificationNumber>
+			<vct:NotificationType>1</vct:NotificationType>
+			<vct:NotificationDate>2015-03-23</vct:NotificationDate>
+		</vram:NotificationData>
+		<vram:UserCompanyNotificationParty>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>10010656261</vct:Identification>
+			<vct:Name>PAREDES PASAPERA JUAN MANUEL</vct:Name>
+			<vram:TradeAddress>
+				<vct:StreetName>MOYOBAMBA                </vct:StreetName>
+				<vct:Ubigeo>220901</vct:Ubigeo>
+			</vram:TradeAddress>
+			<vram:TelephoneUniversalCommunication>
+				<vct:CompleteNumber>-</vct:CompleteNumber>
+			</vram:TelephoneUniversalCommunication>
+			<vct:CompanySize>3</vct:CompanySize>
+			<vct:MiningCompanySize/>
+			<vct:CIIU>7411</vct:CIIU>
+			<vct:ER/>
+			<vram:AditionalInfo>
+				<vct:ConcessionsName/>
+				<vct:ConcessionsCode/>
+				<vct:OSICode/>
+				<vct:DGHCode/>
+			</vram:AditionalInfo>
+			<vram:FemaleWorkers>
+				<vct:Quantity>0</vct:Quantity>
+			</vram:FemaleWorkers>
+			<vram:MaleWorkers>
+				<vct:Quantity>0</vct:Quantity>
+			</vram:MaleWorkers>
+		</vram:UserCompanyNotificationParty>
+		<vram:EmployingCompanyNotificationParty>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>10010656261</vct:Identification>
+			<vct:Name>PAREDES PASAPERA JUAN MANUEL</vct:Name>
+			<vram:TradeAddress>
+				<vct:StreetName>MOYOBAMBA                </vct:StreetName>
+				<vct:Ubigeo>220901</vct:Ubigeo>
+			</vram:TradeAddress>
+			<vram:TelephoneUniversalCommunication>
+				<vct:CompleteNumber>-</vct:CompleteNumber>
+			</vram:TelephoneUniversalCommunication>
+			<vct:CompanySize>2</vct:CompanySize>
+			<vct:MiningCompanySize/>
+			<vct:CIIU>7411</vct:CIIU>
+			<vct:ER/>
+			<vram:AditionalInfo>
+				<vct:ConcessionsName/>
+				<vct:ConcessionsCode/>
+				<vct:OSICode/>
+				<vct:DGHCode/>
+			</vram:AditionalInfo>
+			<vram:FemaleWorkers>
+				<vct:Quantity>0</vct:Quantity>
+			</vram:FemaleWorkers>
+			<vram:MaleWorkers>
+				<vct:Quantity>0</vct:Quantity>
+			</vram:MaleWorkers>
+		</vram:EmployingCompanyNotificationParty>
+	</vram:DocumentHeader>
+	<SpecificInformation>
+		<vram:Worker>
+			<vct:IdentificationType>03</vct:IdentificationType>
+			<vct:Identification>16589751</vct:Identification>
+			<vct:Name>CASTRO ECHEVARRIA DE VELASQUEZ, GRISELDA EDITH</vct:Name>
+			<vct:Sex>2</vct:Sex>
+			<vram:TradeAddress>
+				<vct:StreetName>GRAL. GARZON 485</vct:StreetName>
+				<vct:Ubigeo>150110</vct:Ubigeo>
+			</vram:TradeAddress>
+		</vram:Worker>
+		<vram:OcupationInformation>
+			<vct:OcupationalCategory>6</vct:OcupationalCategory>
+			<vct:WorkerInsured/>
+			<vct:EsSalud/>
+			<vct:Eps/>
+			<vct:Sctr/>
+		</vram:OcupationInformation>
+		<vram:AccidentInformation>
+			<vct:AccidentDate>2015-03-10</vct:AccidentDate>
+			<vct:AccidentTime>07:41:00</vct:AccidentTime>
+			<vct:IncidentAccidentType>2.22</vct:IncidentAccidentType>
+			<vct:Place>mina huaron</vct:Place>
+			<vct:ObjectCausing>1.11.119</vct:ObjectCausing>
+			<vct:Description>se cayo</vct:Description>
+			<vct:PropertyDamage/>
+			<vct:PropertyDamageCost>0</vct:PropertyDamageCost>
+		</vram:AccidentInformation>
+	</SpecificInformation>
+</notificacion>

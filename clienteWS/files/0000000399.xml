@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<notificacion xmlns="urn:peru:mtpe:data:standard:FNATEO1:1" xmlns:vram="MTPEReusableAggregateBusinessInformationEntity" xmlns:vct="mtpe_CommonTypes_D08B" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:6" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:peru:mtpe:data:standard:FNATEO1:1 ../uncefact/data/standard/notificaciones/FNATEO1.xsd&quot;">
+	<vram:DocumentHeader>
+		<vram:NotificationData>
+			<vct:NotificationNumber>00000000000000000399</vct:NotificationNumber>
+			<vct:NotificationType>3</vct:NotificationType>
+			<vct:NotificationDate>2015-04-15</vct:NotificationDate>
+		</vram:NotificationData>
+		<vram:UserCompanyNotificationParty>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>20101362702</vct:Identification>
+			<vct:Name>CONFECCIONES TEXTIMAX S A</vct:Name>
+			<vram:TradeAddress>
+				<vct:StreetName>HUAROCHIRI               </vct:StreetName>
+				<vct:Ubigeo>150137</vct:Ubigeo>
+			</vram:TradeAddress>
+			<vram:TelephoneUniversalCommunication>
+				<vct:CompleteNumber>-</vct:CompleteNumber>
+			</vram:TelephoneUniversalCommunication>
+			<vct:CompanySize>2</vct:CompanySize>
+			<vct:MiningCompanySize/>
+			<vct:CIIU>1810</vct:CIIU>
+			<vct:ER/>
+			<vram:AditionalInfo>
+				<vct:ConcessionsName/>
+				<vct:ConcessionsCode/>
+				<vct:OSICode/>
+				<vct:DGHCode/>
+			</vram:AditionalInfo>
+			<vram:FemaleWorkers>
+				<vct:Quantity>152</vct:Quantity>
+			</vram:FemaleWorkers>
+			<vram:MaleWorkers>
+				<vct:Quantity>59</vct:Quantity>
+			</vram:MaleWorkers>
+		</vram:UserCompanyNotificationParty>
+		<vram:EmployingCompanyNotificationParty>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>20101362702</vct:Identification>
+			<vct:Name>CONFECCIONES TEXTIMAX S A</vct:Name>
+			<vram:TradeAddress>
+				<vct:StreetName>HUAROCHIRI               </vct:StreetName>
+				<vct:Ubigeo>150137</vct:Ubigeo>
+			</vram:TradeAddress>
+			<vram:TelephoneUniversalCommunication>
+				<vct:CompleteNumber>-</vct:CompleteNumber>
+			</vram:TelephoneUniversalCommunication>
+			<vct:CompanySize>2</vct:CompanySize>
+			<vct:MiningCompanySize/>
+			<vct:CIIU>1810</vct:CIIU>
+			<vct:ER/>
+			<vram:AditionalInfo>
+				<vct:ConcessionsName/>
+				<vct:ConcessionsCode/>
+				<vct:OSICode/>
+				<vct:DGHCode/>
+			</vram:AditionalInfo>
+			<vram:FemaleWorkers>
+				<vct:Quantity>152</vct:Quantity>
+			</vram:FemaleWorkers>
+			<vram:MaleWorkers>
+				<vct:Quantity>59</vct:Quantity>
+			</vram:MaleWorkers>
+		</vram:EmployingCompanyNotificationParty>
+	</vram:DocumentHeader>
+	<SpecificInformation>
+		<vram:Worker>
+			<vct:IdentificationType>03</vct:IdentificationType>
+			<vct:Identification>43251110</vct:Identification>
+			<vct:Name>ESTRADA JOAQUIN, ROSA GUDELIA</vct:Name>
+			<vct:Sex>2</vct:Sex>
+			<vram:TradeAddress>
+				<vct:StreetName>CALLE 3434 Nro. 333</vct:StreetName>
+				<vct:Ubigeo>130601</vct:Ubigeo>
+			</vram:TradeAddress>
+		</vram:Worker>
+		<vram:OcupationInformation>
+			<vct:OcupationalCategory>6</vct:OcupationalCategory>
+			<vct:WorkerInsured/>
+			<vct:EsSalud/>
+			<vct:Eps/>
+			<vct:Sctr/>
+		</vram:OcupationInformation>
+		<vram:AccidentInformation>
+			<vct:AccidentDate>2015-04-15</vct:AccidentDate>
+			<vct:AccidentTime>17:15:00</vct:AccidentTime>
+			<vct:IncidentAccidentType>23</vct:IncidentAccidentType>
+			<vct:Place></vct:Place>
+			<vct:ObjectCausing>1.16.161</vct:ObjectCausing>
+			<vct:Description>Caida de maquinaria de rozo</vct:Description>
+			<vct:PropertyDamage></vct:PropertyDamage>
+			<vct:PropertyDamageCost></vct:PropertyDamageCost>
+		</vram:AccidentInformation>
+		<vram:MedicalCertification>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>20230643165</vct:Identification>
+			<vct:Name>CENTRO DE SALUD DE PARIACOTO</vct:Name>
+			<vct:HospitalizationDate>2015-04-15</vct:HospitalizationDate>
+			<vct:MedicalCenterType>1</vct:MedicalCenterType>
+			<vct:BodilyLocationInjury>13</vct:BodilyLocationInjury>
+			<vct:NatureInjury>11</vct:NatureInjury>
+		</vram:MedicalCertification>
+		<vram:AccidentConsequences>
+			<vct:Level>1</vct:Level>
+			<vct:DeathDate>2015-04-17</vct:DeathDate>
+		</vram:AccidentConsequences>
+	</SpecificInformation>
+</notificacion>

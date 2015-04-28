@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<notificacion xmlns="urn:peru:mtpe:data:standard:FNATEO1:1" xmlns:vram="MTPEReusableAggregateBusinessInformationEntity" xmlns:vct="mtpe_CommonTypes_D08B" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:6" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:peru:mtpe:data:standard:FNATEO1:1 ../uncefact/data/standard/notificaciones/FNATEO1.xsd&quot;">
+	<vram:DocumentHeader>
+		<vram:NotificationData>
+			<vct:NotificationNumber>00000000000000000398</vct:NotificationNumber>
+			<vct:NotificationType>2</vct:NotificationType>
+			<vct:NotificationDate>2015-04-15</vct:NotificationDate>
+		</vram:NotificationData>
+		<vram:UserCompanyNotificationParty>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>20101362702</vct:Identification>
+			<vct:Name>CONFECCIONES TEXTIMAX S A</vct:Name>
+			<vram:TradeAddress>
+				<vct:StreetName>HUAROCHIRI               </vct:StreetName>
+				<vct:Ubigeo>150137</vct:Ubigeo>
+			</vram:TradeAddress>
+			<vram:TelephoneUniversalCommunication>
+				<vct:CompleteNumber>-</vct:CompleteNumber>
+			</vram:TelephoneUniversalCommunication>
+			<vct:CompanySize>2</vct:CompanySize>
+			<vct:MiningCompanySize/>
+			<vct:CIIU>1810</vct:CIIU>
+			<vct:ER/>
+			<vram:AditionalInfo>
+				<vct:ConcessionsName/>
+				<vct:ConcessionsCode/>
+				<vct:OSICode/>
+				<vct:DGHCode/>
+			</vram:AditionalInfo>
+			<vram:FemaleWorkers>
+				<vct:Quantity>152</vct:Quantity>
+			</vram:FemaleWorkers>
+			<vram:MaleWorkers>
+				<vct:Quantity>59</vct:Quantity>
+			</vram:MaleWorkers>
+		</vram:UserCompanyNotificationParty>
+		<vram:EmployingCompanyNotificationParty>
+			<vct:IdentificationType>09</vct:IdentificationType>
+			<vct:Identification>20101362702</vct:Identification>
+			<vct:Name>CONFECCIONES TEXTIMAX S A</vct:Name>
+			<vram:TradeAddress>
+				<vct:StreetName>HUAROCHIRI               </vct:StreetName>
+				<vct:Ubigeo>150137</vct:Ubigeo>
+			</vram:TradeAddress>
+			<vram:TelephoneUniversalCommunication>
+				<vct:CompleteNumber>-</vct:CompleteNumber>
+			</vram:TelephoneUniversalCommunication>
+			<vct:CompanySize>2</vct:CompanySize>
+			<vct:MiningCompanySize/>
+			<vct:CIIU>1810</vct:CIIU>
+			<vct:ER/>
+			<vram:AditionalInfo>
+				<vct:ConcessionsName/>
+				<vct:ConcessionsCode/>
+				<vct:OSICode/>
+				<vct:DGHCode/>
+			</vram:AditionalInfo>
+			<vram:FemaleWorkers>
+				<vct:Quantity>152</vct:Quantity>
+			</vram:FemaleWorkers>
+			<vram:MaleWorkers>
+				<vct:Quantity>59</vct:Quantity>
+			</vram:MaleWorkers>
+		</vram:EmployingCompanyNotificationParty>
+	</vram:DocumentHeader>
+	<SpecificInformation>
+		<vram:Worker>
+			<vct:IdentificationType>03</vct:IdentificationType>
+			<vct:Identification>40573859</vct:Identification>
+			<vct:Name>SANTOS CARRION, JOSE</vct:Name>
+			<vct:Sex>1</vct:Sex>
+			<vram:TradeAddress>
+				<vct:StreetName>AVENIDA AVIACION Nro. 23</vct:StreetName>
+				<vct:Ubigeo>150101</vct:Ubigeo>
+			</vram:TradeAddress>
+		</vram:Worker>
+		<vram:OcupationInformation>
+			<vct:OcupationalCategory>3</vct:OcupationalCategory>
+			<vct:WorkerInsured/>
+			<vct:EsSalud/>
+			<vct:Eps/>
+			<vct:Sctr/>
+		</vram:OcupationInformation>
+		<vram:AccidentInformation>
+			<vct:AccidentDate>2015-04-15</vct:AccidentDate>
+			<vct:AccidentTime>13:23:00</vct:AccidentTime>
+			<vct:IncidentAccidentType>4</vct:IncidentAccidentType>
+			<vct:Place></vct:Place>
+			<vct:ObjectCausing></vct:ObjectCausing>
+			<vct:Description>En la planta de hillado se cayo una bobina de hilo mojado causando daños en la linea camisera</vct:Description>
+			<vct:PropertyDamage>Planta de hilado de linea camisera</vct:PropertyDamage>
+			<vct:PropertyDamageCost>500</vct:PropertyDamageCost>
+		</vram:AccidentInformation>
+	</SpecificInformation>
+</notificacion>
