@@ -15,7 +15,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Hello World Julio!" );
         MtpeSunateoServiceService m= new MtpeSunateoServiceService();
         SunateoService sunateoService=m.getPort(SunateoService.class);
         Transaccion tx=sunateoService.obtenerNotificacionesPendientes("WSOSI");
