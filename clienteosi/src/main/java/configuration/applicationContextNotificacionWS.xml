@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+      http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/aop 
+                           http://www.springframework.org/schema/aop/spring-aop.xsd
+	">
+
+
+	<util:properties id="notificacionConfig"
+		location="file:/Apps/PORTAL/config/ws/notificacion/webServiceClient.properties" />
+
+	<context:component-scan
+		base-package="pe.gob.mtpe.sunateo.ws.proxy,pe.gob.mtpe.sunateo.ws,pe.gob.mtpe.sunateo.ws.dao" />
+
+	<!-- <bean id="notificacionEndpointLookup" class="pe.gob.onp.entidad.interceptor.soap.LookupEndpointInterceptor" 
+		factory-method="endpointLookup"> <constructor-arg value="#{notificacionConfig['endpointLookup.baseUrl']}" 
+		/> <constructor-arg value="#{notificacionConfig['endpointLookup.environment']}" 
+		/> <constructor-arg value="#{notificacionConfig['jaxws.userNameWS']}" /> 
+		<constructor-arg value="#{notificacionConfig['jaxws.passwordWS.enc']}" /> 
+		<constructor-arg value="#{notificacionConfig['jaxws.serviceName']}" /> <constructor-arg 
+		value="#{notificacionConfig['jaxws.namespaceUri']}" /> <constructor-arg value="#{notificacionConfig['endpointLookup.version']}" 
+		/> </bean> -->
+
+	<bean id="wsNotificaciones"
+		class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+		<property name="serviceInterface"
+			value="#{notificacionConfig['jaxws.serviceInterface']}" />
+		<property name="wsdlDocumentUrl"
+			value="#{notificacionConfig['jaxws.wsdlDocumentUrl']}" />
+		<property name="namespaceUri" value="#{notificacionConfig['jaxws.namespaceUri']}" />
+		<property name="serviceName" value="#{notificacionConfig['jaxws.serviceName']}" />
+		<property name="portName" value="#{notificacionConfig['jaxws.portName']}" />
+		<property name="endpointAddress" value="#{notificacionConfig['jaxws.endpoint']}" />
+		<property name="customProperties">
+			<ref bean="notificacionJaxwsDefaultTimeOut" />
+		</property>
+		<property name="lookupServiceOnStartup" value="false" />
+		<!-- <property name="handlerResolver" ref="notificacionHandlerResolver" 
+			/> -->
+	</bean>
+
+
+	<!-- <bean id="notificacionHandlerResolver" class="pe.gob.onp.entidad.interceptor.soap.DefaultHandlerResolver"> 
+		<property name="handlerList"> <list> <bean class="pe.gob.onp.entidad.interceptor.soap.TokenHandler"> 
+		<property name="userNameWS" value="#{notificacionConfig['jaxws.userNameWS']}" 
+		/> <property name="passwordWS" value="#{notificacionConfig['jaxws.passwordWS']}" 
+		/> </bean> <bean class="pe.gob.onp.entidad.interceptor.soap.SOAPLoggingHandler" 
+		/> </list> </property> </bean> -->
+
+	<util:map id="notificacionJaxwsDefaultTimeOut">
+		<entry key="com.sun.xml.ws.request.timeout">
+			<value type="java.lang.Integer">600000</value>
+		</entry>
+		<entry key="com.sun.xml.ws.connect.timeout">
+			<value type="java.lang.Integer">600000</value>
+		</entry>
+	</util:map>
+
+
+	<bean id="notificacionDAO" class="pe.gob.mtpe.sunateo.ws.dao.NotificacionDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="#{notificacionConfig['jdbc.driverClassName']}"/>
+        <property name="url" value="#{notificacionConfig['jdbc.url']}"/>
+        <property name="username" value="#{notificacionConfig['jdbc.username']}"/>
+        <property name="password" value="#{notificacionConfig['jdbc.password']}"/>
+    </bean>
+    
+    <!--  Aspectos -->
+    <aop:aspectj-autoproxy />
+ 
+	<bean id="customerBo" class="pe.com.itama.ws.clienteosi.CustomerBoImpl" />
+ 
+	<!-- Aspect -->
+	<bean id="logAspect" class="pe.com.itama.ws.clienteosi.LoggingAspect" />
+	
+	<!-- log4j setting -->
+	<bean id="log4jInitialization"
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments">
+			<list>
+				<value>/Apps/PORTAL/config/clienteOsiLog4j.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+
+
+</beans>
